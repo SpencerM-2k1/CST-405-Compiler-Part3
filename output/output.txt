@@ -1,0 +1,597 @@
+Pushed SubTable at index 0: (ID: 0, name: main_0, address: 0x55f814f297d0)
+    Index 0: (ID: 0, name: main_0, address: 0x55f814f297d0)
+PARSER: Recognized variable declaration: inputVal
+PARSER: Printing symbol table
+===Symbol Table (Addr: 0x55f814f28480):===
+SubTable (ID: 0, Name: main_0):
+└── (Pointer: 0x55f814f297d0, Parent Pointer: (nil)):
+PARSER: Checking if variable has already been declared
+Name with suffix: inputVal
+newSymbol->name: inputVal
+===Symbol Table (Addr: 0x55f814f28480):===
+SubTable (ID: 0, Name: main_0):
+└── (Pointer: 0x55f814f297d0, Parent Pointer: (nil)):
+    Name: inputVal, Type: VarType_Int[0], FullName: main_0.inputVal_var, Address: 0x55f814f2fce0
+newSymbol->name: ifTest
+Pushed SubTable at index 1: (ID: 1, name: ifTest_1, address: 0x55f814f2fe80)
+    Index 1: (ID: 1, name: ifTest_1, address: 0x55f814f2fe80)
+newSymbol->name: x
+newSymbol->name: forcePrint
+PARSER: Recognized identifier
+PARSER: Recognized int number
+PARSER: Recognized greater-than-or-equal expression
+DEBUG: Invalid NodeType
+PARSER: Recognized identifier
+PARSER: Recognized write statement
+PARSER: Recognized statement list
+PARSER: Recognized identifier
+PARSER: Recognized int number
+PARSER: Recognized equality expression
+DEBUG: Invalid NodeType
+PARSER: Recognized identifier
+PARSER: Recognized inequality expression
+DEBUG: Invalid NodeType
+PARSER: Recognized character
+PARSER: Recognized write statement
+PARSER: Recognized identifier
+PARSER: Recognized write statement
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized character
+PARSER: Recognized write statement
+PARSER: Recognized statement list
+PARSER: Recognized 'if-else' statement
+PARSER: Recognized 'if-else' statement
+PARSER: Recognized statement list
+PARSER: Recognized function declaration: ifTest
+PARSER: Recognized declaration list (function entry)
+PARSER: Recognized declaration list (variable entry)
+PARSER: Recognized float number
+PARSER: Recognized boolean constant
+PARSER: Recognized float number
+PARSER: Recognized boolean constant
+PARSER: Recognized float number
+PARSER: Recognized boolean constant
+PARSER: Recognized float number
+PARSER: Recognized boolean constant
+PARSER: Recognized int number
+PARSER: Recognized write statement
+PARSER: Recognized boolean constant
+PARSER: Recognized write statement
+PARSER: Recognized float number
+PARSER: Recognized int number
+PARSER: Recognized greater-than-or-equal expression
+DEBUG: Invalid NodeType
+PARSER: Recognized boolean constant
+PARSER: Recognized inequality expression
+DEBUG: Invalid NodeType
+PARSER: Recognized write statement
+PARSER: Recognized character
+PARSER: Recognized character
+PARSER: Recognized equality expression
+DEBUG: Invalid NodeType
+PARSER: Recognized write statement
+PARSER: Recognized character
+PARSER: Recognized character
+PARSER: Recognized equality expression
+DEBUG: Invalid NodeType
+PARSER: Recognized write statement
+PARSER: Recognized character
+PARSER: Recognized character
+PARSER: Recognized inequality expression
+DEBUG: Invalid NodeType
+PARSER: Recognized write statement
+PARSER: Recognized character
+PARSER: Recognized character
+PARSER: Recognized inequality expression
+DEBUG: Invalid NodeType
+PARSER: Recognized write statement
+PARSER: Recognized int number
+PARSER: Recognized write statement
+PARSER: Recognized float number
+PARSER: Recognized write statement
+PARSER: Recognized boolean constant
+PARSER: Recognized write statement
+PARSER: Recognized boolean constant
+PARSER: Recognized write statement
+PARSER: Recognized int number
+PARSER: Recognized write statement
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+PARSER: Recognized statement list
+The PARSER has started
+Parsing successful!
+Program
+├── DeclList
+|   ├── VarDecl: int inputVal
+|   └── DeclList
+|       └── FuncDecl: VarType_Void ifTest (SubTable: 0x55f814f2fe80)
+|           ├── ParamList
+|           |   ├── Param: VarType_Float x
+|           |   └── ParamList
+|           |       └── Param: VarType_Int forcePrint
+|           └── StmtList
+|               └── IfStmt
+|                   ├── RelOp: >=
+|                   |   ├── SimpleID: x
+|                   |   └── IntExpr: 90
+|                   ├── StmtList
+|                   |   └── WriteStmt
+|                   |       └── SimpleID: x
+|                   └── IfStmt
+|                       ├── RelOp: &&
+|                       |   ├── RelOp: ==
+|                       |   |   ├── SimpleID: x
+|                       |   |   └── IntExpr: 70
+|                       |   └── SimpleID: forcePrint
+|                       ├── StmtList
+|                       |   ├── WriteStmt
+|                       |   |   └── CharExpr: F
+|                       |   └── StmtList
+|                       |       └── WriteStmt
+|                       |           └── SimpleID: x
+|                       └── StmtList
+|                           └── WriteStmt
+|                               └── CharExpr: -
+└── StmtList
+    ├── FuncCall: ifTest()
+    |   └── ArgList
+    |       ├── Arg
+    |       |   └── FloatExpr: 100.000000
+    |       └── ArgList
+    |           └── Arg
+    |               └── IntExpr: 1
+    └── StmtList
+        ├── FuncCall: ifTest()
+        |   └── ArgList
+        |       ├── Arg
+        |       |   └── FloatExpr: 70.000000
+        |       └── ArgList
+        |           └── Arg
+        |               └── IntExpr: 1
+        └── StmtList
+            ├── FuncCall: ifTest()
+            |   └── ArgList
+            |       ├── Arg
+            |       |   └── FloatExpr: 100.000000
+            |       └── ArgList
+            |           └── Arg
+            |               └── IntExpr: 0
+            └── StmtList
+                ├── FuncCall: ifTest()
+                |   └── ArgList
+                |       ├── Arg
+                |       |   └── FloatExpr: 80.000000
+                |       └── ArgList
+                |           └── Arg
+                |               └── IntExpr: 1
+                └── StmtList
+                    ├── WriteStmt
+                    |   └── Expr (unary): neg
+                    |       └── IntExpr: 5
+                    └── StmtList
+                        ├── WriteStmt
+                        |   └── IntExpr: 0
+                        └── StmtList
+                            ├── WriteStmt
+                            |   └── RelOp: ||
+                            |       ├── RelOp: >=
+                            |       |   ├── FloatExpr: 100.000000
+                            |       |   └── IntExpr: 90
+                            |       └── IntExpr: 0
+                            └── StmtList
+                                ├── WriteStmt
+                                |   └── RelOp: ==
+                                |       ├── CharExpr: B
+                                |       └── CharExpr: B
+                                └── StmtList
+                                    ├── WriteStmt
+                                    |   └── RelOp: ==
+                                    |       ├── CharExpr: B
+                                    |       └── CharExpr: C
+                                    └── StmtList
+                                        ├── WriteStmt
+                                        |   └── RelOp: !=
+                                        |       ├── CharExpr: B
+                                        |       └── CharExpr: b
+                                        └── StmtList
+                                            ├── WriteStmt
+                                            |   └── RelOp: !=
+                                            |       ├── CharExpr: B
+                                            |       └── CharExpr: B
+                                            └── StmtList
+                                                ├── WriteStmt
+                                                |   └── Expr (unary): neg
+                                                |       └── IntExpr: 8
+                                                └── StmtList
+                                                    ├── WriteStmt
+                                                    |   └── Expr (unary): neg
+                                                    |       └── FloatExpr: 3.141000
+                                                    └── StmtList
+                                                        ├── WriteStmt
+                                                        |   └── Expr (unary): !
+                                                        |       └── IntExpr: 0
+                                                        └── StmtList
+                                                            ├── WriteStmt
+                                                            |   └── Expr (unary): !
+                                                            |       └── IntExpr: 1
+                                                            └── StmtList
+                                                                └── WriteStmt
+                                                                    └── Expr (unary): !
+                                                                        └── IntExpr: 101
+===Symbol Table (Addr: 0x55f814f28480):===
+SubTable (ID: 1, Name: ifTest_1):
+└── (Pointer: 0x55f814f2fe80, Parent Pointer: 0x55f814f297d0):
+    Name: x, Type: VarType_Float, FullName: ifTest_1.x_var, Address: 0x55f814f302b0
+    Name: forcePrint, Type: VarType_Int[0], FullName: ifTest_1.forcePrint_var, Address: 0x55f814f303d0
+SubTable (ID: 0, Name: main_0):
+└── (Pointer: 0x55f814f297d0, Parent Pointer: (nil)):
+    Name: ifTest, Type: VarType_Void, FullName: main_0.ifTest_func, Address: 0x55f814f2fde0
+    Name: inputVal, Type: VarType_Int[0], FullName: main_0.inputVal_var, Address: 0x55f814f2fce0
+
+=== SEMANTIC ANALYSIS ===
+
+Performing semantic analysis on program
+node->data.funcDecl.funcSubTable: 0x55f814f2fe80
+Pushed SubTable at index 1: (ID: 1, name: ifTest_1, address: 0x55f814f2fe80)
+    Index 1: (ID: 1, name: ifTest_1, address: 0x55f814f2fe80)
+        symTabRef: 0x55f814f28480
+    Comparing "x" and "x"newParam->type: VarType_Float
+SYMBOL_TABLE: Adding parameter VarType_Float x to function ifTest
+        symTabRef: 0x55f814f28480
+    Comparing "forcePrint" and "forcePrint"newParam->type: VarType_Int
+SYMBOL_TABLE: Adding parameter VarType_Int forcePrint to function ifTest
+    ===OPERAND STACK===
+     - f0
+    ===END OF OPERAND STACK===
+    Pushed new operand f0 to the stack
+    ===OPERAND STACK===
+     - f0
+     - i0
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f0
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i1
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f2
+    ===END OF OPERAND STACK===
+    Pushed new operand f2 to the stack
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f3
+    ===END OF OPERAND STACK===
+    Pushed new operand f3 to the stack
+    ===OPERAND STACK===
+     - f3
+     - i2
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f3
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i3
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i3
+     - i4
+    ===END OF OPERAND STACK===
+    Pushed new operand i4 to the stack
+    ===OPERAND STACK===
+     - i3
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i5
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c0
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f5
+    ===END OF OPERAND STACK===
+    Pushed new operand f5 to the stack
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c1
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f6
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f6
+     - i6
+    ===END OF OPERAND STACK===
+paramsTail: VarType_Int forcePrint
+    ===OPERAND STACK===
+     - f6
+    ===END OF OPERAND STACK===
+argOperand: VarType_Int i6
+currentParam: VarType_Int forcePrint
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+argOperand: VarType_Float f6
+currentParam: VarType_Float x
+    ===OPERAND STACK===
+     - f7
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f7
+     - i7
+    ===END OF OPERAND STACK===
+paramsTail: VarType_Int forcePrint
+    ===OPERAND STACK===
+     - f7
+    ===END OF OPERAND STACK===
+argOperand: VarType_Int i7
+currentParam: VarType_Int forcePrint
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+argOperand: VarType_Float f7
+currentParam: VarType_Float x
+    ===OPERAND STACK===
+     - f8
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f8
+     - i8
+    ===END OF OPERAND STACK===
+paramsTail: VarType_Int forcePrint
+    ===OPERAND STACK===
+     - f8
+    ===END OF OPERAND STACK===
+argOperand: VarType_Int i8
+currentParam: VarType_Int forcePrint
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+argOperand: VarType_Float f8
+currentParam: VarType_Float x
+    ===OPERAND STACK===
+     - f9
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f9
+     - i9
+    ===END OF OPERAND STACK===
+paramsTail: VarType_Int forcePrint
+    ===OPERAND STACK===
+     - f9
+    ===END OF OPERAND STACK===
+argOperand: VarType_Int i9
+currentParam: VarType_Int forcePrint
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+argOperand: VarType_Float f9
+currentParam: VarType_Float x
+    ===OPERAND STACK===
+     - i10
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i11
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i12
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f10
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f10
+     - i13
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f10
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i14
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i14
+     - i15
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i14
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i16
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c2
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c2
+     - c3
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c2
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i17
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c4
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c4
+     - c5
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c4
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i18
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c6
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c6
+     - c7
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c6
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i19
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c8
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c8
+     - c9
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - c8
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i20
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i21
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i22
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f12
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - f13
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i23
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i24
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i25
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i26
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i27
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+     - i28
+    ===END OF OPERAND STACK===
+    ===OPERAND STACK===
+    ===END OF OPERAND STACK===
+
+=== TAC GENERATION ===
+TAC written to output/TAC.ir
+==Function 0 TAC==
+(null) = (null) funcStart (null)
+f0 = ifTest_1.x_var load.float (null)
+i0 = 90 assign.int (null)
+f1 = i0 intToFloat (null)
+i1 = f0 >=.float f1
+L0 = i1 ifFalse (null)
+f2 = ifTest_1.x_var load.float (null)
+(null) = f2 write.float (null)
+L1 = (null) goto (null)
+L0 = (null) label (null)
+f3 = ifTest_1.x_var load.float (null)
+i2 = 70 assign.int (null)
+f4 = i2 intToFloat (null)
+i3 = f3 ==.float f4
+i4 = ifTest_1.forcePrint_var load.int (null)
+i5 = i3 &&.int i4
+L2 = i5 ifFalse (null)
+c0 = F assign.char (null)
+(null) = c0 write.char (null)
+f5 = ifTest_1.x_var load.float (null)
+(null) = f5 write.float (null)
+L3 = (null) goto (null)
+L2 = (null) label (null)
+c1 = - assign.char (null)
+(null) = c1 write.char (null)
+L3 = (null) label (null)
+L1 = (null) label (null)
+(null) = (null) return (null)
+Function TAC written to output/FunctionTAC0.ir
+
+=== CODE GENERATION ===
+currentSym, varType: 0x55f814f302b0, VarType_Float
+currentSym, varType: 0x55f814f303d0, VarType_Int
+currentSym, varType: 0x55f814f2fde0, VarType_Void
+currentSym, varType: 0x55f814f2fce0, VarType_Int
+MIPS code generated and saved to file output/output.asm
